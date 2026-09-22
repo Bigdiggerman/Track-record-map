@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searle Forestry Track Record</title>
+<meta name="description" content="Interactive map of forests sold by Searle Forestry across New Zealand, with LINZ title boundaries and key details for each sale.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23344414'/%3E%3Cpath d='M16 6l8 12h-5v6h-6v-6H8z' fill='%23c9d13a'/%3E%3C/svg%3E">
+<style>.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style>
+<style>
+:root{
+  --bg:#f3f1ec; --panel:#ffffff; --panel2:#f7f5f0; --line:#ded9cf;
+  --ink:#1d220b; --ink2:#4b5238; --ink3:#7b8768;
+  --forest:#344414; --olive:#37441D; --accent:#717D4A; --tan:#C99C73; --cream:#FBFAF8;
+  --b2000:#1f2f50; --b1000:#2f5d34; --b200:#6fa539; --b0:#c9d13a;
+  --boundary:#ffcc33;
+}
+:root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
+  --bg:#0f120c; --panel:#171c12; --panel2:#1f2618; --line:#333d28;
+  --ink:#eef1e6; --ink2:#a8b394; --ink3:#7b8768; --cream:#171c12; --tan:#d4ad88;
+}}
+:root[data-theme="dark"]{
+  --bg:#0f120c; --panel:#171c12; --panel2:#1f2618; --line:#333d28;
+  --ink:#eef1e6; --ink2:#a8b394; --ink3:#7b8768; --cream:#171c12; --tan:#d4ad88;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;align-items:center;gap:16px;padding:10px 16px;background:var(--forest);color:#fff;flex:none;min-height:60px}
+header img{height:40px;width:auto}
+header h1{font:600 18px/1.2 "Cormorant Garamond",Georgia,serif;margin:0;letter-spacing:.02em}
+header h1 small{display:block;font:500 11px/1.3 Inter,system-ui,sans-serif;opacity:.8;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+header .stats{margin-left:auto;display:flex;gap:18px;font-size:12px;opacity:.95}
+header .stats b{display:block;font-size:18px;font-weight:600;line-height:1.1}
+main{flex:1;display:flex;min-height:0;position:relative}
+#map{flex:1;min-width:0;background:#cfd8dc}
+aside{width:340px;flex:none;background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+aside .tools{padding:10px 12px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px;background:var(--panel2)}
+aside input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12px;cursor:pointer;background:var(--panel);color:var(--ink2);display:flex;align-items:center;gap:6px;user-select:none}
+.chip.on{background:var(--forest);color:#fff;border-color:var(--forest)}
+.chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
+#list{flex:1;overflow:auto;padding:4px 0}
+.row{display:flex;align-items:center;gap:10px;padding:7px 12px;cursor:pointer;border-bottom:1px solid var(--line)}
+.row:hover,.row.sel{background:var(--panel2)}
+.row .pin{width:22px;height:22px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff}
+.row .n{flex:1;min-width:0}
+.row .n b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .n span{font-size:11.5px;color:var(--ink3)}
+.row .ha{font-variant-numeric:tabular-nums;color:var(--ink2);font-size:12.5px;white-space:nowrap}
+#detail{display:none;flex-direction:column;min-height:0;flex:1}
+#detail .head{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+#detail .head h2{font:600 20px/1.15 "Cormorant Garamond",Georgia,serif;margin:0}
+#detail .head .sub{font-size:12px;color:var(--ink3);margin-top:3px}
+#detail .back{background:none;border:1px solid var(--line);border-radius:6px;color:var(--ink2);cursor:pointer;padding:4px 8px;font:inherit;font-size:12px}
+#detail .body{padding:10px 14px;overflow:auto;flex:1}
+dl{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;margin:0 0 12px;font-size:13px}
+dt{color:var(--ink3)}
+dd{margin:0;font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--ink3);background:var(--panel2);border-radius:6px;padding:8px 10px;margin:8px 0}
+.desc{font-size:13px;color:var(--ink2);margin:0 0 10px}
+.btns{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;padding:6px 10px;font:inherit;font-size:12.5px;cursor:pointer}
+.btn.primary{background:var(--forest);color:#fff;border-color:var(--forest)}
+.leaflet-container{font:inherit}
+.leaflet-popup-content-wrapper{border-radius:8px}
+.leaflet-popup-content{margin:10px 14px;font-size:13px}
+.leaflet-popup-content b{font-size:14px}
+.pin-icon{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center}
+.pin-icon span{transform:rotate(45deg);color:#fff;font:700 10px/1 Inter,system-ui,sans-serif}
+.pin-icon.approx{border-style:dashed}
+.legend{background:var(--panel);color:var(--ink);padding:8px 10px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.3);font-size:12px;line-height:1.7}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.legend .dash{border:1.5px dashed var(--ink3);background:none}
+.leaflet-control-layers{font-size:12px}
+.leaflet-bar a{color:#222}
+#toggle{display:none;position:absolute;right:10px;top:10px;z-index:900;background:var(--forest);color:#fff;border:0;border-radius:6px;padding:8px 12px;font:inherit}
+.source{font-size:11px;color:var(--ink3);padding:8px 12px;border-top:1px solid var(--line)}
+@media (max-width:760px){
+  header .stats{display:none}
+  header{padding:8px 16px}
+  aside{position:absolute;right:0;top:0;bottom:0;width:min(340px,86vw);transform:translateX(100%);transition:transform .2s;z-index:950;box-shadow:-2px 0 10px rgba(0,0,0,.3)}
+  aside.open{transform:none}
+  #toggle{display:block}
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Searle Forestry">
+  <h1>Track record<small>Forests sold across New Zealand</small></h1>
+  <div class="stats"><div><b id="st-n">–</b>forests sold</div><div><b id="st-ha">–</b>hectares</div><div><b id="st-ni">–</b>North Island</div><div><b id="st-si">–</b>South Island</div></div>
+</header>
+<main>
+  <div id="map"></div>
+  <button id="toggle">List</button>
+  <aside id="aside">
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search forest, locality or region…" autocomplete="off">
+      <div class="chips" id="bands"></div>
+      <div class="chips" id="islands"></div>
+    </div>
+    <div id="list"></div>
+    <div id="detail">
+      <div class="head"><div style="flex:1"><h2 id="d-name"></h2><div class="sub" id="d-sub"></div></div><button class="back" id="d-back">← All</button></div>
+      <div class="body">
+        <p class="desc" id="d-desc"></p>
+        <dl id="d-dl"></dl>
+        <div class="note" id="d-note"></div>
+        <div class="btns"><button class="btn primary" id="d-zoom">Zoom to boundary</button><button class="btn" id="d-nz">Whole of NZ</button></div>
+      </div>
+    </div>
+    <div class="source">Boundaries: LINZ Data Service (CC BY 4.0). Imagery: Esri, Maxar, Earthstar Geographics. Areas are as recorded at sale.</div>
+  </aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin=""></script>
+<script>
+const SITES = [{"id":"carter-holt-harvey-estate","name":"Carter Holt Harvey Estate","island":"North","band":"2000+","legend_no":1,"area_ha":40000,"has_boundary":false},{"id":"wellington-regional-council-estate","name":"Wellington Regional Council Estate","island":"North","band":"2000+","legend_no":2,"area_ha":5430,"has_boundary":false},{"id":"lismore","name":"Lismore","island":"North","band":"2000+","legend_no":3,"area_ha":3724,"has_boundary":false},{"id":"oio","name":"Oio","island":"North","band":"2000+","legend_no":4,"area_ha":2923,"has_boundary":false},{"id":"arlie-estate","name":"Arlie Estate","island":"North","band":"2000+","legend_no":5,"area_ha":2503,"has_boundary":false},{"id":"craigmore-forest-estate","name":"Craigmore Forest Estate","island":"North","band":"2000+","legend_no":6,"area_ha":2135,"has_boundary":false},{"id":"waiorongomai-and-poroporo-2","name":"Waiorongomai & Poroporo 2","island":"North","band":"2000+","legend_no":7,"area_ha":2100,"has_boundary":false},{"id":"mighty-river-power-estate","name":"Mighty River Power Estate","island":"North","band":"2000+","legend_no":8,"area_ha":2002,"has_boundary":false},{"id":"te-rata","name":"Te Rata","island":"North","band":"2000+","legend_no":9,"area_ha":2000,"notes":"Sold twice","has_boundary":false},{"id":"waiotahi","name":"Waiotahi","island":"North","band":"1000-1999","legend_no":1,"area_ha":1467,"notes":"Sold twice","has_boundary":false},{"id":"tmot","name":"TMOT","island":"North","band":"1000-1999","legend_no":2,"area_ha":1442,"has_boundary":false},{"id":"whanganui-district-council-estate","name":"Whanganui District Council Estate","island":"North","band":"1000-1999","legend_no":3,"area_ha":1200,"has_boundary":false},{"id":"aorangi","name":"Aorangi","island":"North","band":"1000-1999","legend_no":4,"area_ha":1177,"has_boundary":false},{"id":"sun-valley","name":"Sun Valley","island":"North","band":"1000-1999","legend_no":5,"area_ha":735,"has_boundary":false},{"id":"te-kapua","name":"Te Kapua","island":"North","band":"1000-1999","legend_no":6,"area_ha":687,"has_boundary":false},{"id":"raysburn","name":"Raysburn","island":"North","band":"1000-1999","legend_no":7,"area_ha":603,"has_boundary":false},{"id":"tuakau","name":"Tuakau","island":"North","band":"200-999","legend_no":1,"area_ha":534,"has_boundary":false},{"id":"cnbm-keywest","name":"CNBM Keywest","island":"North","band":"200-999","legend_no":2,"area_ha":489,"has_boundary":false},{"id":"otangaroa","name":"Otangaroa","island":"North","band":"200-999","legend_no":3,"area_ha":440,"has_boundary":false},{"id":"kohitere","name":"Kohitere","island":"North","band":"200-999","legend_no":4,"area_ha":433,"notes":"Sold twice","has_boundary":false},{"id":"mangamahu","name":"Mangamahu","island":"North","band":"200-999","legend_no":5,"area_ha":420,"has_boundary":false},{"id":"honikiwi","name":"Honikiwi","island":"North","band":"200-999","legend_no":6,"area_ha":394,"has_boundary":false},{"id":"fernhill","name":"Fernhill","island":"North","band":"200-999","legend_no":7,"area_ha":381,"has_boundary":false},{"id":"poroporo","name":"Poroporo","island":"North","band":"200-999","legend_no":8,"area_ha":360,"has_boundary":false},{"id":"silverstream","name":"Silverstream","island":"North","band":"200-999","legend_no":9,"area_ha":356,"has_boundary":false},{"id":"hillcote","name":"Hillcote","island":"North","band":"200-999","legend_no":10,"area_ha":318,"has_boundary":false},{"id":"tuamata","name":"Tuamata","island":"North","band":"200-999","legend_no":11,"area_ha":313,"has_boundary":false},{"id":"omakura","name":"Omakura","island":"North","band":"200-999","legend_no":12,"area_ha":306,"has_boundary":false},{"id":"mangakawakawa","name":"Mangakawakawa","island":"North","band":"200-999","legend_no":13,"area_ha":291,"has_boundary":false},{"id":"ongarue-stream","name":"Ongarue Stream","island":"North","band":"200-999","legend_no":14,"area_ha":289,"has_boundary":false},{"id":"brunswick-road","name":"Brunswick Road","island":"North","band":"200-999","legend_no":15,"area_ha":288,"has_boundary":false},{"id":"tregoweth","name":"Tregoweth","island":"North","band":"200-999","legend_no":16,"area_ha":241,"has_boundary":false},{"id":"manakau","name":"Manakau","island":"North","band":"200-999","legend_no":17,"area_ha":237,"has_boundary":false},{"id":"tassenberg","name":"Tassenberg","island":"North","band":"200-999","legend_no":18,"area_ha":204,"has_boundary":false},{"id":"galatea","name":"Galatea","island":"North","band":"0-199","legend_no":1,"area_ha":174,"has_boundary":false},{"id":"waiotira","name":"Waiotira","island":"North","band":"0-199","legend_no":2,"area_ha":173,"has_boundary":false},{"id":"waiterimu","name":"Waiterimu","island":"North","band":"0-199","legend_no":3,"area_ha":161,"has_boundary":false},{"id":"makarau","name":"Makarau","island":"North","band":"0-199","legend_no":4,"area_ha":160,"notes":"Sold twice","has_boundary":false},{"id":"mangahoe","name":"Mangahoe","island":"North","band":"0-199","legend_no":5,"area_ha":156,"has_boundary":false},{"id":"block-access-road","name":"Block Access Road","island":"North","band":"0-199","legend_no":6,"area_ha":150,"has_boundary":false},{"id":"waiotehue","name":"Waiotehue","island":"North","band":"0-199","legend_no":7,"area_ha":150,"has_boundary":false},{"id":"hoggs-road","name":"Hoggs Road","island":"North","band":"0-199","legend_no":8,"area_ha":143,"has_boundary":false},{"id":"primepine","name":"Primepine","island":"North","band":"0-199","legend_no":9,"area_ha":118,"has_boundary":false},{"id":"knights","name":"Knights","island":"North","band":"0-199","legend_no":10,"area_ha":72,"has_boundary":false},{"id":"te-waitere","name":"Te Waitere","island":"North","band":"0-199","legend_no":11,"area_ha":40,"has_boundary":false},{"id":"yuretich-road","name":"Yuretich Road","island":"North","band":"0-199","legend_no":12,"area_ha":23,"has_boundary":false},{"id":"mangahoe-2","name":"Mangahoe 2","island":"North","band":"0-199","legend_no":13,"area_ha":23,"notes":"Second Mangahoe block","has_boundary":false},{"id":"twin-valley","name":"Twin Valley","island":"North","band":"0-199","legend_no":14,"area_ha":20,"has_boundary":false},{"id":"manuka-island","name":"Manuka Island","island":"South","band":"200-999","legend_no":1,"area_ha":2411,"has_boundary":false},{"id":"queen-charlotte-and-onapua","name":"Queen Charlotte & Onapua","island":"South","band":"200-999","legend_no":2,"area_ha":1775,"has_boundary":false},{"id":"hillfort","name":"Hillfort","island":"South","band":"200-999","legend_no":3,"area_ha":989,"has_boundary":false},{"id":"glen-arlie","name":"Glen Arlie","island":"South","band":"200-999","legend_no":4,"area_ha":847,"has_boundary":false},{"id":"alistair-mckenzie","name":"Alistair McKenzie","island":"South","band":"200-999","legend_no":5,"area_ha":836,"has_boundary":false},{"id":"lawrence-north-and-south","name":"Lawrence North & South","island":"South","band":"200-999","legend_no":6,"area_ha":739,"has_boundary":false},{"id":"wether-hills","name":"Wether Hills","island":"South","band":"200-999","legend_no":7,"area_ha":675,"has_boundary":false},{"id":"waitahuna-gully","name":"Waitahuna Gully","island":"South","band":"200-999","legend_no":8,"area_ha":655,"has_boundary":false},{"id":"dunrobin","name":"Dunrobin","island":"South","band":"200-999","legend_no":9,"area_ha":630,"has_boundary":false},{"id":"mount-trotters","name":"Mount Trotters","island":"South","band":"200-999","legend_no":10,"area_ha":585,"has_boundary":false},{"id":"fallaburn","name":"Fallaburn","island":"South","band":"200-999","legend_no":11,"area_ha":434,"has_boundary":false},{"id":"westwood","name":"Westwood","island":"South","band":"200-999","legend_no":12,"area_ha":360,"has_boundary":false},{"id":"nugget-stream","name":"Nugget Stream","island":"South","band":"200-999","legend_no":13,"area_ha":354,"has_boundary":false},{"id":"monowai","name":"Monowai","island":"South","band":"200-999","legend_no":14,"area_ha":288,"has_boundary":false},{"id":"whare-creek","name":"Whare Creek","island":"South","band":"200-999","legend_no":15,"area_ha":277,"has_boundary":false},{"id":"wakamarina","name":"Wakamarina","island":"South","band":"200-999","legend_no":16,"area_ha":247,"has_boundary":false},{"id":"les-pullar","name":"Les Pullar","island":"South","band":"200-999","legend_no":17,"area_ha":242,"has_boundary":false},{"id":"moeraki-bush","name":"Moeraki Bush","island":"South","band":"200-999","legend_no":18,"area_ha":229,"has_boundary":false},{"id":"glenore","name":"Glenore","island":"South","band":"200-999","legend_no":19,"area_ha":209,"has_boundary":false},{"id":"christies-gully","name":"Christies Gully","island":"South","band":"0-199","legend_no":19,"area_ha":190,"has_boundary":false},{"id":"scroggs-hill","name":"Scroggs Hill","island":"South","band":"0-199","legend_no":20,"area_ha":185,"has_boundary":false},{"id":"east-takaka","name":"East Takaka","island":"South","band":"0-199","legend_no":21,"area_ha":174,"has_boundary":false},{"id":"mangles","name":"Mangles","island":"South","band":"0-199","legend_no":22,"area_ha":138,"has_boundary":false},{"id":"cam-mcculloch","name":"Cam McCulloch","island":"South","band":"0-199","legend_no":23,"area_ha":134,"has_boundary":false},{"id":"felton-road","name":"Felton Road","island":"South","band":"0-199","legend_no":24,"area_ha":134,"has_boundary":false},{"id":"warren-conway","name":"Warren Conway","island":"South","band":"0-199","legend_no":25,"area_ha":123,"has_boundary":false},{"id":"chinook","name":"Chinook","island":"South","band":"0-199","legend_no":26,"area_ha":119,"has_boundary":false},{"id":"alloair","name":"Alloair","island":"South","band":"0-199","legend_no":27,"area_ha":95,"has_boundary":false},{"id":"mangles-forest-partners","name":"Mangles Forest Partners","island":"South","band":"0-199","legend_no":28,"area_ha":93,"has_boundary":false},{"id":"seaward-bush","name":"Seaward Bush","island":"South","band":"0-199","legend_no":29,"area_ha":88,"has_boundary":false},{"id":"skyfarm","name":"SkyFarm","island":"South","band":"0-199","legend_no":30,"area_ha":80,"has_boundary":false},{"id":"tapawera","name":"Tapawera","island":"South","band":"0-199","legend_no":31,"area_ha":73,"has_boundary":false},{"id":"cable-bay","name":"Cable Bay","island":"South","band":"0-199","legend_no":32,"area_ha":65,"has_boundary":false},{"id":"murchison-highway","name":"Murchison Highway","island":"South","band":"0-199","legend_no":33,"area_ha":54,"has_boundary":false},{"id":"westwood-2","name":"Westwood 2","island":"South","band":"0-199","legend_no":34,"area_ha":39,"notes":"Second Westwood block","has_boundary":false},{"id":"christmas","name":"Christmas","island":"South","band":"0-199","legend_no":35,"area_ha":34,"has_boundary":false},{"id":"anderson","name":"Anderson","island":"South","band":"0-199","legend_no":36,"area_ha":33,"has_boundary":false},{"id":"waitaki","name":"Waitaki","island":"South","band":"0-199","legend_no":37,"area_ha":14,"has_boundary":false},{"id":"taumatahinau","name":"Taumatahinau","island":"North","area_ha":483.59,"address":"Waiotu Road, Hukerenui","locality":"Hukerenui","lat":-35.425796,"lon":174.223987,"has_boundary":false},{"id":"rangitatau","name":"Rangitatau","island":"North","area_ha":408.14,"address":"Rangitatau Road, Paparangi","locality":"Paparangi","lat":-39.74043,"lon":174.951441,"has_boundary":false},{"id":"smith-road","name":"Smith Road","island":"North","area_ha":85.27,"address":"188 Smith Road, Whareora","lat":-35.694906,"lon":174.452866,"has_boundary":true,"parcel_area_ha":85.2,"titles":["NA115B/592"]},{"id":"pikorua-farm","name":"Pikorua Farm","island":"North","area_ha":168.84,"address":"313 Paiaka Road, Towai","lat":-35.543271,"lon":174.141478,"has_boundary":true,"parcel_area_ha":99.3,"titles":["NA49A/1009"]},{"id":"puketitiri","name":"Puketitiri","island":"North","area_ha":213,"address":"Puketitiri Road, Puketitiri, Hawke's Bay","locality":"Puketitiri","lat":-39.284994,"lon":176.541068,"has_boundary":false},{"id":"waverley","name":"Waverley","island":"North","area_ha":256.39,"address":"Braemore Road, Waverley","locality":"Waverley","lat":-39.698537,"lon":174.655048,"has_boundary":false},{"id":"awhitu","name":"Awhitu","island":"North","area_ha":29.91,"address":"Awhitu Road, Awhitu","locality":"Awhitu","lat":-37.110587,"lon":174.617628,"has_boundary":false},{"id":"marshall-road","name":"Marshall Road","island":"North","area_ha":508,"address":"434a Marshall Road, Rangiwahia","lat":-39.908147,"lon":175.824213,"has_boundary":true,"parcel_area_ha":160.5,"titles":["WN19B/782"]},{"id":"gull-flat","name":"Gull Flat","island":"North","area_ha":180.6,"address":"463 Gull Flat Road, Kereru","lat":-39.618819,"lon":176.350305,"has_boundary":true,"parcel_area_ha":268.9,"titles":["HBP2/775"]},{"id":"worser-bay","name":"Worser Bay","island":"North","area_ha":272,"address":"Mangamako Road, Manawatu","locality":"Ohingaiti","lat":-39.886326,"lon":175.738145,"has_boundary":false},{"id":"mcgregor","name":"McGregor","island":"North","area_ha":243.18,"address":"Rangitatau Road, Paparangi","locality":"Paparangi","lat":-39.74043,"lon":174.951441,"has_boundary":false},{"id":"hawkins","name":"Hawkins","island":"South","area_ha":38.6,"address":"22 Hawkins Road, Darfield","locality":"Darfield","lat":-43.491911,"lon":172.11223,"has_boundary":false},{"id":"stoney-creek","name":"Stoney Creek","island":"North","area_ha":51.55,"address":"Dye Access Road, Kaukapakapa","locality":"Kaukapakapa","lat":-36.617137,"lon":174.534657,"has_boundary":false}];
+const PARCELS = {};       // id -> GeoJSON (single-file build) ; empty in dist build
+const PARCEL_BASE = "parcels/";     // dist build: parcels/<id>.geojson
+
+const BANDS = [
+  {key:"2000+", label:"2,000+ ha", color:"#1f2f50", min:2000},
+  {key:"1000-1999", label:"1,000–1,999 ha", color:"#2f5d34", min:1000},
+  {key:"200-999", label:"200–999 ha", color:"#6fa539", min:200},
+  {key:"0-199", label:"Under 200 ha", color:"#c9c92a", min:0},
+];
+function bandOf(s){ const a=+s.area_ha||0; return BANDS.find(b=>a>=b.min)||BANDS[3]; }
+const fmt=n=>n==null?"–":Number(n).toLocaleString("en-NZ",{maximumFractionDigits:n<100?1:0});
+
+// ---- map
+const map=L.map("map",{preferCanvas:false,zoomControl:true,minZoom:4}).setView([-40.9,172.5],5);
+const esriImg=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Esri, Maxar, Earthstar Geographics"});
+const esriTopo=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Esri"});
+const light=L.layerGroup([
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,attribution:"Esri, HERE, Garmin, © OpenStreetMap contributors"}),
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,pane:"labels"})]);
+const darkBase=L.layerGroup([
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,attribution:"Esri, HERE, Garmin, © OpenStreetMap contributors"}),
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,pane:"labels"})]);
+const labels=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,pane:"labels"});
+map.createPane("labels"); map.getPane("labels").style.zIndex=450; map.getPane("labels").style.pointerEvents="none";
+map.createPane("boundary"); map.getPane("boundary").style.zIndex=440;
+const dark=matchMedia("(prefers-color-scheme: dark)").matches;
+(dark?darkBase:light).addTo(map);
+L.control.layers({"Light map":light,"Dark map":darkBase,"Aerial imagery":esriImg,"Topographic":esriTopo},{"Place labels":labels},{position:"topleft",collapsed:true}).addTo(map);
+map.on("baselayerchange",e=>{ if(e.layer===esriImg) labels.addTo(map); else map.removeLayer(labels); userBase=e.layer; });
+let userBase=null, autoImg=false;
+// Boundaries read best over imagery; switch automatically when a forest is opened and
+// back again for the whole-of-NZ view, unless the viewer picked a base map themselves.
+function useImagery(on){
+  const cur=[light,darkBase,esriImg,esriTopo].find(l=>map.hasLayer(l));
+  if(on){ if(cur===esriImg||cur===esriTopo) return; if(userBase&&userBase!==light&&userBase!==darkBase) return;
+    map.removeLayer(cur); esriImg.addTo(map); labels.addTo(map); autoImg=true; }
+  else if(autoImg){ map.removeLayer(esriImg); map.removeLayer(labels); (dark?darkBase:light).addTo(map); autoImg=false; }
+}
+
+const legend=L.control({position:"bottomleft"});
+legend.onAdd=()=>{const d=L.DomUtil.create("div","legend");d.innerHTML=BANDS.map(b=>`<div><i style="background:${b.color}"></i>${b.label}</div>`).join("")+`<div><i class="dash"></i>Approximate location</div>`;return d;};
+legend.addTo(map);
+
+// ---- state
+const state={band:new Set(BANDS.map(b=>b.key)),island:new Set(["North","South"]),q:"",sel:null};
+const markers=new Map(); let boundaryLayer=null; const parcelCache={};
+const group=L.featureGroup().addTo(map);
+
+function icon(s){const b=bandOf(s);const approx=!s.has_boundary;return L.divIcon({className:"",html:`<div class="pin-icon ${approx?"approx":""}" style="background:${b.color}"><span>${s.legend_no||""}</span></div>`,iconSize:[26,26],iconAnchor:[13,26],popupAnchor:[0,-24]});}
+
+SITES.forEach(s=>{
+  if(s.lat==null) return;
+  const m=L.marker([s.lat,s.lon],{icon:icon(s),title:s.name});
+  m.bindPopup(()=>`<b>${s.name}</b><br>${fmt(s.area_ha)} ha${s.locality?" · "+s.locality:""}${s.region?", "+s.region:""}<br><a href="#" onclick="select('${s.id}');return false;">Details & boundary →</a>`);
+  m.on("click",()=>select(s.id,false));
+  markers.set(s.id,m);
+});
+
+function visible(s){
+  if(!state.band.has(bandOf(s).key)) return false;
+  if(!state.island.has(s.island)) return false;
+  if(state.q){const q=state.q.toLowerCase(); if(!(s.name+" "+(s.locality||"")+" "+(s.region||"")+" "+(s.address||"")).toLowerCase().includes(q)) return false;}
+  return true;
+}
+function refresh(){
+  group.clearLayers();
+  const list=document.getElementById("list"); list.innerHTML="";
+  const rows=SITES.filter(visible).sort((a,b)=>(b.area_ha||0)-(a.area_ha||0));
+  rows.forEach(s=>{
+    const m=markers.get(s.id); if(m) group.addLayer(m);
+    const b=bandOf(s);
+    const r=document.createElement("div"); r.className="row"+(state.sel===s.id?" sel":""); r.dataset.id=s.id;
+    r.innerHTML=`<div class="pin" style="background:${b.color};${s.lat==null?"opacity:.35":""}">${s.legend_no||""}</div><div class="n"><b>${s.name}</b><span>${[s.locality,s.region].filter(Boolean).join(", ")||s.island+" Island"}${s.lat==null?" · not yet mapped":""}</span></div><div class="ha">${fmt(s.area_ha)} ha</div>`;
+    r.onclick=()=>select(s.id,true);
+    list.appendChild(r);
+  });
+  document.getElementById("st-n").textContent=SITES.length;
+  document.getElementById("st-ha").textContent=fmt(SITES.reduce((a,s)=>a+(+s.area_ha||0),0));
+  document.getElementById("st-ni").textContent=SITES.filter(s=>s.island==="North").length;
+  document.getElementById("st-si").textContent=SITES.filter(s=>s.island==="South").length;
+}
+function chips(el,items,set){
+  el.innerHTML="";
+  items.forEach(it=>{const c=document.createElement("div");c.className="chip"+(set.has(it.key)?" on":"");c.innerHTML=(it.color?`<i style="background:${it.color}"></i>`:"")+it.label;
+    c.onclick=()=>{ if(set.has(it.key)&&set.size>1) set.delete(it.key); else set.add(it.key); chips(el,items,set); refresh(); };
+    el.appendChild(c);});
+}
+chips(document.getElementById("bands"),BANDS,state.band);
+chips(document.getElementById("islands"),[{key:"North",label:"North Island"},{key:"South",label:"South Island"}],state.island);
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim();refresh();});
+document.getElementById("toggle").onclick=()=>document.getElementById("aside").classList.toggle("open");
+
+async function loadParcel(id){
+  if(parcelCache[id]) return parcelCache[id];
+  if(PARCELS[id]) return parcelCache[id]=PARCELS[id];
+  if(!PARCEL_BASE) return null;
+  try{const r=await fetch(PARCEL_BASE+id+".geojson");if(!r.ok)return null;return parcelCache[id]=await r.json();}catch(e){return null;}
+}
+
+// fitBounds that survives a container that had no size yet (page still laying out, hidden tab):
+// re-checks shortly after and on the next resize, and refits without animation if the zoom is off.
+function fitSafe(bounds){
+  map.invalidateSize(false);
+  map.fitBounds(bounds,{animate:!document.hidden});
+  const check=()=>{ map.invalidateSize(false); const want=map.getBoundsZoom(bounds); if(Math.abs(map.getZoom()-want)>1) map.fitBounds(bounds,{animate:false}); };
+  setTimeout(check,400); map.once("resize",check);
+  document.addEventListener("visibilitychange",()=>{ if(!document.hidden) check(); },{once:true});
+}
+async function select(id,zoom=true){
+  const s=SITES.find(x=>x.id===id); if(!s) return;
+  state.sel=id; refresh();
+  document.getElementById("list").style.display="none";
+  const d=document.getElementById("detail"); d.style.display="flex";
+  document.getElementById("d-name").textContent=s.name;
+  document.getElementById("d-sub").textContent=[s.address||s.locality,s.region].filter(Boolean).join(", ")||(s.island+" Island");
+  document.getElementById("d-desc").textContent=s.description||"";
+  const dl=[["Area sold",fmt(s.area_ha)+" ha"]];
+  if(s.parcel_area_ha) dl.push(["LINZ title area",fmt(s.parcel_area_ha)+" ha"]);
+  if(s.sale_year) dl.push(["Sold",s.sale_date||String(s.sale_year)]);
+  if(s.tenure) dl.push(["Tenure",s.tenure]);
+  if(s.vendor_type) dl.push(["Vendor",s.vendor_type]);
+  if(s.titles&&s.titles.length) dl.push(["Titles",s.titles.slice(0,8).join(", ")+(s.titles.length>8?" +"+(s.titles.length-8):"")]);
+  dl.push(["Island",s.island]);
+  document.getElementById("d-dl").innerHTML=dl.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
+  const note=document.getElementById("d-note");
+  if(s.lat==null){note.style.display="block";note.textContent="Location not yet confirmed — this sale is listed but not pinned.";}
+  else if(!s.has_boundary){note.style.display="block";note.textContent="Approximate location (placed by locality). LINZ boundary not yet linked.";}
+  else if(s.notes){note.style.display="block";note.textContent=s.notes;}
+  else note.style.display="none";
+  if(boundaryLayer){map.removeLayer(boundaryLayer);boundaryLayer=null;}
+  document.getElementById("d-zoom").textContent=s.has_boundary?"Zoom to boundary":"Zoom in";
+  if(s.lat!=null){
+    const m=markers.get(id);
+    if(s.has_boundary){
+      const gj=await loadParcel(id);
+      if(gj){boundaryLayer=L.geoJSON(gj,{pane:"boundary",style:{color:"#ffcc33",weight:2.5,fillColor:"#ffcc33",fillOpacity:.12}}).addTo(map);
+        if(zoom){ fitSafe(boundaryLayer.getBounds().pad(0.25)); useImagery(true); }}
+      else if(zoom) map.setView([s.lat,s.lon],13,{animate:!document.hidden});
+    } else if(zoom) map.setView([s.lat,s.lon],11,{animate:!document.hidden});
+    if(m&&zoom) m.openPopup();
+  }
+  if(innerWidth<=760&&zoom) document.getElementById("aside").classList.remove("open");
+}
+document.getElementById("d-back").onclick=()=>{state.sel=null;document.getElementById("detail").style.display="none";document.getElementById("list").style.display="block";if(boundaryLayer){map.removeLayer(boundaryLayer);boundaryLayer=null;}refresh();};
+document.getElementById("d-zoom").onclick=()=>{if(boundaryLayer)fitSafe(boundaryLayer.getBounds().pad(0.25));else if(state.sel){const s=SITES.find(x=>x.id===state.sel);if(s&&s.lat!=null)map.setView([s.lat,s.lon],12);}};
+document.getElementById("d-nz").onclick=()=>{ useImagery(false); map.fitBounds(group.getBounds().pad(0.05)); };
+refresh();
+// Initial whole-of-NZ fit. A timeout rather than requestAnimationFrame: rAF does not fire
+// while the tab is hidden, and would then override a selection made in the meantime.
+// No animation on load: a zoom animation that never finishes (hidden tab) swallows every later setView.
+map.invalidateSize();
+if(location.hash.length>1){ select(decodeURIComponent(location.hash.slice(1)),true); }
+else if(group.getLayers().length) map.fitBounds(group.getBounds().pad(0.05),{animate:false});
+</script>
+</body>
+</html>
