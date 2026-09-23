@@ -143,8 +143,8 @@ const labels=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/R
 map.createPane("labels"); map.getPane("labels").style.zIndex=450; map.getPane("labels").style.pointerEvents="none";
 map.createPane("boundary"); map.getPane("boundary").style.zIndex=440;
 const dark=matchMedia("(prefers-color-scheme: dark)").matches;
-(dark?darkBase:light).addTo(map);
-L.control.layers({"Light map":light,"Dark map":darkBase,"Aerial imagery":esriImg,"Topographic":esriTopo},{"Place labels":labels},{position:"topleft",collapsed:true}).addTo(map);
+esriImg.addTo(map); labels.addTo(map);     // aerial imagery is the default background
+L.control.layers({"Aerial imagery":esriImg,"Topographic":esriTopo,"Light map":light,"Dark map":darkBase},{"Place labels":labels},{position:"topleft",collapsed:true}).addTo(map);
 map.on("baselayerchange",e=>{ if(e.layer===esriImg) labels.addTo(map); else map.removeLayer(labels); userBase=e.layer; });
 let userBase=null, autoImg=false;
 // Boundaries read best over imagery; switch automatically when a forest is opened and
